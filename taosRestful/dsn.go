@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/taosdata/driver-go/v2/errors"
+	"github.com/pyddot/taos-driver-go-v2/errors"
 )
 
 var (

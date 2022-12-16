@@ -5,9 +5,9 @@ import (
 	"database/sql/driver"
 	"sync"
 
-	"github.com/taosdata/driver-go/v2/common"
-	"github.com/taosdata/driver-go/v2/errors"
-	"github.com/taosdata/driver-go/v2/wrapper"
+	"github.com/pyddot/taos-driver-go-v2/common"
+	"github.com/pyddot/taos-driver-go-v2/errors"
+	"github.com/pyddot/taos-driver-go-v2/wrapper"
 )
 
 type connector struct {

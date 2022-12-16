@@ -6,15 +6,15 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/taosdata/driver-go/v2/af/async"
-	"github.com/taosdata/driver-go/v2/af/insertstmt"
-	"github.com/taosdata/driver-go/v2/af/locker"
-	"github.com/taosdata/driver-go/v2/af/param"
-	"github.com/taosdata/driver-go/v2/common"
-	"github.com/taosdata/driver-go/v2/errors"
-	taosError "github.com/taosdata/driver-go/v2/errors"
-	"github.com/taosdata/driver-go/v2/wrapper"
-	"github.com/taosdata/driver-go/v2/wrapper/handler"
+	"github.com/pyddot/taos-driver-go-v2/af/async"
+	"github.com/pyddot/taos-driver-go-v2/af/insertstmt"
+	"github.com/pyddot/taos-driver-go-v2/af/locker"
+	"github.com/pyddot/taos-driver-go-v2/af/param"
+	"github.com/pyddot/taos-driver-go-v2/common"
+	"github.com/pyddot/taos-driver-go-v2/errors"
+	taosError "github.com/pyddot/taos-driver-go-v2/errors"
+	"github.com/pyddot/taos-driver-go-v2/wrapper"
+	"github.com/pyddot/taos-driver-go-v2/wrapper/handler"
 )
 
 type Connector struct {

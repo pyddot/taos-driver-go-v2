@@ -9,9 +9,10 @@ package wrapper
 import "C"
 import (
 	"errors"
-	"github.com/taosdata/driver-go/v2/common"
-	taosTypes "github.com/taosdata/driver-go/v2/types"
 	"unsafe"
+
+	"github.com/pyddot/taos-driver-go-v2/common"
+	taosTypes "github.com/pyddot/taos-driver-go-v2/types"
 )
 
 // TaosStmtInit TAOS_STMT *taos_stmt_init(TAOS *taos);
@@ -244,7 +245,7 @@ func TaosStmtClose(stmt unsafe.Pointer) int {
 	return int(C.taos_stmt_close(stmt))
 }
 
-//TaosStmtSetSubTBName int        taos_stmt_set_sub_tbname(TAOS_STMT* stmt, const char* name);
+// TaosStmtSetSubTBName int        taos_stmt_set_sub_tbname(TAOS_STMT* stmt, const char* name);
 func TaosStmtSetSubTBName(stmt unsafe.Pointer, name string) int {
 	cStr := C.CString(name)
 	defer C.free(unsafe.Pointer(cStr))

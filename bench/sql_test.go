@@ -3,9 +3,10 @@ package bench
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/taosdata/driver-go/v2/taosSql"
 	"testing"
 	"time"
+
+	_ "github.com/pyddot/taos-driver-go-v2/taosSql"
 )
 
 var (

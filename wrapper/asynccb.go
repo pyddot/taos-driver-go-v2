@@ -11,7 +11,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/taosdata/driver-go/v2/wrapper/cgo"
+	"github.com/pyddot/taos-driver-go-v2/wrapper/cgo"
 )
 
 type Caller interface {

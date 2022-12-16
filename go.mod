@@ -1,4 +1,4 @@
-module github.com/taosdata/driver-go/v2
+module github.com/pyddot/taos-driver-go-v2
 
 go 1.14
 

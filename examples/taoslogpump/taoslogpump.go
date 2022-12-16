@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	taos "github.com/taosdata/driver-go/v2/af"
+	taos "github.com/pyddot/taos-driver-go-v2/af"
 )
 
 func main() {

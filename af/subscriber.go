@@ -4,9 +4,9 @@ import (
 	"database/sql/driver"
 	"unsafe"
 
-	"github.com/taosdata/driver-go/v2/af/locker"
-	"github.com/taosdata/driver-go/v2/errors"
-	"github.com/taosdata/driver-go/v2/wrapper"
+	"github.com/pyddot/taos-driver-go-v2/af/locker"
+	"github.com/pyddot/taos-driver-go-v2/errors"
+	"github.com/pyddot/taos-driver-go-v2/wrapper"
 )
 
 type Subscriber interface {

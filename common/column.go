@@ -3,7 +3,7 @@ package common
 import (
 	"reflect"
 
-	"github.com/taosdata/driver-go/v2/types"
+	"github.com/pyddot/taos-driver-go-v2/types"
 )
 
 var (

@@ -10,11 +10,12 @@ import (
 	"database/sql"
 	"flag"
 	"fmt"
-	"github.com/taosdata/driver-go/v2/types"
 	"os"
 	"time"
 
-	_ "github.com/taosdata/driver-go/v2/taosSql"
+	"github.com/pyddot/taos-driver-go-v2/types"
+
+	_ "github.com/pyddot/taos-driver-go-v2/taosSql"
 )
 
 type config struct {

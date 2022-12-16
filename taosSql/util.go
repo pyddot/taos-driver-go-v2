@@ -2,7 +2,8 @@ package taosSql
 
 import (
 	"database/sql/driver"
-	"github.com/taosdata/driver-go/v2/errors"
+
+	"github.com/pyddot/taos-driver-go-v2/errors"
 )
 
 func namedValueToValue(named []driver.NamedValue) ([]driver.Value, error) {

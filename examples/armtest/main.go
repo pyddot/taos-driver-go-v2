@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	_ "github.com/taosdata/driver-go/v2/taosSql"
+	_ "github.com/pyddot/taos-driver-go-v2/taosSql"
 )
 
 func main() {

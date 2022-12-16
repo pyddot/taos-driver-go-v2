@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"unsafe"
 
-	"github.com/taosdata/driver-go/v2/errors"
-	"github.com/taosdata/driver-go/v2/wrapper"
-	"github.com/taosdata/driver-go/v2/wrapper/handler"
+	"github.com/pyddot/taos-driver-go-v2/errors"
+	"github.com/pyddot/taos-driver-go-v2/wrapper"
+	"github.com/pyddot/taos-driver-go-v2/wrapper/handler"
 )
 
 type rows struct {

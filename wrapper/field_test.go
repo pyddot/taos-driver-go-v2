@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/pyddot/taos-driver-go-v2/common"
+	"github.com/pyddot/taos-driver-go-v2/errors"
 	"github.com/stretchr/testify/assert"
-	"github.com/taosdata/driver-go/v2/common"
-	"github.com/taosdata/driver-go/v2/errors"
 )
 
 // @author: xftan

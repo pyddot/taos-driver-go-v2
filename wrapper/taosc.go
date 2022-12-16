@@ -26,8 +26,8 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/taosdata/driver-go/v2/errors"
-	"github.com/taosdata/driver-go/v2/wrapper/cgo"
+	"github.com/pyddot/taos-driver-go-v2/errors"
+	"github.com/pyddot/taos-driver-go-v2/wrapper/cgo"
 )
 
 // TaosFreeResult void taos_free_result(TAOS_RES *res);
