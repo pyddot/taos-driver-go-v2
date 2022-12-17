@@ -14,7 +14,7 @@ import (
 // Ensure that all the driver interfaces are implemented
 
 var (
-	driverName                    = "taosRestful"
+	driverName                    = "taosRestfulv2"
 	user                          = "root"
 	password                      = "taosdata"
 	host                          = "127.0.0.1"
@@ -75,6 +75,7 @@ func runTests(t *testing.T, tests ...func(dbt *DBTest)) {
 		dbt.Exec("DROP TABLE IF EXISTS test_taos_restful.test")
 	}
 }
+
 // func (dbt *DBTest) fail(method, query string, err error) {
 // 	if len(query) > 300 {
 // 		query = "[query too large to print]"

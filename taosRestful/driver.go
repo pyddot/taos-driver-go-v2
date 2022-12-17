@@ -24,5 +24,5 @@ func (d tdengineDriver) Open(dsn string) (driver.Conn, error) {
 }
 
 func init() {
-	sql.Register("taosRestful", &tdengineDriver{})
+	sql.Register("taosRestfulv2", &tdengineDriver{})
 }

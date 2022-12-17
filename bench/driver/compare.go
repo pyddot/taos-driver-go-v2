@@ -20,7 +20,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	restfulDB, err = sql.Open("taosRestful", "root:taosdata@http(127.0.0.1:6041)/?readBufferSize=52428800")
+	restfulDB, err = sql.Open("taosRestfulv2", "root:taosdata@http(127.0.0.1:6041)/?readBufferSize=52428800")
 	if err != nil {
 		panic(err)
 	}

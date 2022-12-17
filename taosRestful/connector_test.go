@@ -15,7 +15,7 @@ import (
 // @date: 2021/12/21 10:58
 // @description: test common use of restful
 func TestOpenQuery(t *testing.T) {
-	db, err := sql.Open("taosRestful", "root:taosdata@http(127.0.0.1:6041)/?token=123")
+	db, err := sql.Open("taosRestfulv2", "root:taosdata@http(127.0.0.1:6041)/?token=123")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -46,7 +46,7 @@ func TestOpenQuery(t *testing.T) {
 // @description: test restful query of all type
 func TestAllTypeQuery(t *testing.T) {
 	rand.Seed(time.Now().UnixNano())
-	db, err := sql.Open("taosRestful", dataSourceName)
+	db, err := sql.Open("taosRestfulv2", dataSourceName)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -173,7 +173,7 @@ func TestAllTypeQuery(t *testing.T) {
 // @description: test query all null value
 func TestAllTypeQueryNull(t *testing.T) {
 	rand.Seed(time.Now().UnixNano())
-	db, err := sql.Open("taosRestful", dataSourceName)
+	db, err := sql.Open("taosRestfulv2", dataSourceName)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -286,7 +286,7 @@ func TestAllTypeQueryNull(t *testing.T) {
 // @description: test restful query of all type with compression
 func TestAllTypeQueryCompression(t *testing.T) {
 	rand.Seed(time.Now().UnixNano())
-	db, err := sql.Open("taosRestful", dataSourceNameWithCompression)
+	db, err := sql.Open("taosRestfulv2", dataSourceNameWithCompression)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -412,7 +412,7 @@ func TestAllTypeQueryCompression(t *testing.T) {
 // @description: test restful query of all type without json (httpd)
 func TestAllTypeQueryWithoutJson(t *testing.T) {
 	rand.Seed(time.Now().UnixNano())
-	db, err := sql.Open("taosRestful", dataSourceName)
+	db, err := sql.Open("taosRestfulv2", dataSourceName)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -535,7 +535,7 @@ func TestAllTypeQueryWithoutJson(t *testing.T) {
 // @description: test query all null value without json (httpd)
 func TestAllTypeQueryNullWithoutJson(t *testing.T) {
 	rand.Seed(time.Now().UnixNano())
-	db, err := sql.Open("taosRestful", dataSourceName)
+	db, err := sql.Open("taosRestfulv2", dataSourceName)
 	if err != nil {
 		t.Fatal(err)
 	}
